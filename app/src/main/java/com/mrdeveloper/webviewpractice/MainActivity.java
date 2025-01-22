@@ -110,7 +110,9 @@ public class MainActivity extends AppCompatActivity {
         } );
 
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+        webView.clearCache(true);
+        webView.clearHistory();
 
 
 
