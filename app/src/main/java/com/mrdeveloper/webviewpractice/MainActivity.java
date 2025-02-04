@@ -73,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(intent);
                     return true; // WebView এ লোড করা বন্ধ করা
+                } else if (url.startsWith("https://api.whatsapp.com")){
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(intent);
+                    return true; // WebView এ লোড করা বন্ধ করা
                 }
 
                 return false;
